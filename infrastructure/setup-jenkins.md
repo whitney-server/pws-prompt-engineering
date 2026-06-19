@@ -8,6 +8,7 @@ Configure this project to build for production on our Jenkins instance by adding
 2. Determine the environment variables and secrets required to build this project for production. Declare them in a single `environment {}` block at the top of the file so they are easy for a human to read and audit.
 3. Implement the pipeline stages defined in **Pipeline Stages**.
 4. Implement the post actions defined in **Post Actions**.
+5. Clean your work to remove extraneous comments. At most, you may include short, one liner comments for complex concepts.
 
 ## Conventions
 - Use a declarative `pipeline { ... }`.

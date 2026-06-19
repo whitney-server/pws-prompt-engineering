@@ -6,6 +6,7 @@ Configure this project to build and deploy with Docker, behind a Traefik reverse
 ## Deliverables
 1. Create a `Dockerfile` at the repository root that builds a production image.
 2. Create a `docker-compose.yml` that runs the image and exposes it to Traefik.
+3. Clean your work to remove extraneous comments. At most, you may include short, one liner comments for complex concepts.
 
 ## Placeholders
 Replace these before use; they are not real values.
