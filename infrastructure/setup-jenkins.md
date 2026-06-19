@@ -49,7 +49,7 @@ discordSend(
 ```
 
 **Parameters:**
-- `webhookURL` — pulled from the secret credential `env.DISCORD_WEBHOOK`.
+- `webhookURL` — pulled from the secret credential `env.DISCORD_WEBHOOK`, which is in Jenkins as `discord-pws-builds-channel-webhook`.
 - `title` — `📦 Build Alert: <JOB_NAME> [Build #<BUILD_NUMBER>]`.
 - `link` — `<BUILD_URL>` (makes the embed link back to Jenkins).
 - `result` — `<currentBuild.currentResult>` (drives the embed's sidebar color).
