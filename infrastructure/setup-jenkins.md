@@ -20,7 +20,7 @@ Configure this project to build for production on our Jenkins instance by adding
 | # | Stage | Purpose |
 |---|-------|---------|
 | 1 | **Checkout** | Pull the latest source for the commit being built. |
-| 2 | **Preflight** | Validate prerequisites before doing real work: required secrets are present, external dependencies (e.g. a shared network) exist, and config is well-formed. Fail fast if not. |
+| 2 | **Preflight** | Validate prerequisites before doing real work: required secrets are present, external dependencies exist, and config is well-formed. Fail fast if not. |
 | 3 | **Lint & Type-check** | Run static quality checks (linting, type/compile checks) in a clean, isolated environment to catch errors before deploying. |
 | 4 | **Teardown** | Stop and remove the previous deployment, ensuring no leftover resources block the new one. |
 | 5 | **Build & Deploy** | Build the release artifact (injecting any build-time config/secrets) and start the new version. |
