@@ -49,8 +49,6 @@ Refactor the application codebase to be readable, maintainable, and scalable by 
   * **`GLOSSARY.md`:** Concise definitions of domain-specific terminology, acronyms, and custom concepts.
 * Keep all context files scannable, dense with facts, and completely free of conversational or marketing fluff. Use explicit `TODO:` tags for any missing details requiring human input.
 
----
-
 ## 3. Implementation Steps
 
 1. Run the project's linter and static analysis tools to identify style violations, dead code, and high-complexity files.
@@ -58,24 +56,3 @@ Refactor the application codebase to be readable, maintainable, and scalable by 
 3. Clean up comments and unused code across all modified files.
 4. Clean up the `.claude/` folder and populate or update `CLAUDE.md`, `GOALS.md`, `DESIGN.md`, `IMPLEMENTATION.md`, and `GLOSSARY.md`.
 5. Run the existing test suite to ensure all functionality and edge cases remain intact without regressions.
-
----
-
-## 4. Verification Commands
-
-Provide verification steps in the PR or documentation:
-
-```bash
-# 1. Run standard linter / formatter check
-npm run lint          # Node.js/TypeScript
-# or: flake8 / black --check .  # Python
-# or: golangci-lint run          # Go
-
-# 2. Verify .claude/ directory structure and missing flags
-ls -la .claude/
-grep -rn "TODO:" .claude/
-
-# 3. Run test suite to verify no functional regressions
-npm test              # Node.js/TypeScript
-# or: pytest                     # Python
-# or: go test ./...              # Go
